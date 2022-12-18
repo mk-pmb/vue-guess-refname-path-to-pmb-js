@@ -27,7 +27,7 @@ const EX = function guessRefNamesPath(vueElem) {
     const nextEl = (found.haystack || par);
     const { refName } = found;
     refPath.push(refName);
-    console.debug('refPath', found, refPath);
+    // console.debug('refPath', found, refPath);
     if (found) {
       hints.push({ refName });
     } else {
@@ -51,7 +51,7 @@ const EX = function guessRefNamesPath(vueElem) {
     });
     throw err;
   }
-  console.debug('refPath', refPath);
+  // console.debug('refPath', refPath);
   return refPath;
 };
 
